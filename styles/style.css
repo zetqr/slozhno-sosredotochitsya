@@ -2,4 +2,126 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--main-background-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  margin: var(--page-general-margin);
+  display: grid;
+  grid-template-rows: 75px 150px 250px 1fr;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before,
+.decorated-zone::after {
+  display: block;
+  position: absolute;
+  margin: 10px;
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+}
+
+.decorated-zone::before {
+  top: -5px;
+  right: -5px;
+  border-top: 1px solid var(--decoration-color);
+  border-right: 1px solid var(--decoration-color);
+}
+
+.decorated-zone::after {
+  bottom: -10px;
+  left: -10px;
+  border-bottom: 1px solid var(--decoration-color);
+  border-left: 1px solid var(--decoration-color);
+}
+
+.dark-theme-icon {
+  position: absolute;
+  top: 7px;
+  right: 34px;
+  grid-row: 1;
+  font-size: var(--main-font-size);
+  font-family: var(--general-font-family);
+  font-weight: var(--main-font-weight);
+  font-style: var(--main-font-style);
+  line-height: var(--dark-theme-decoration-text-line-height);
+  color: var(--decoration-color);
+  text-transform: uppercase;
+}
+
+.dark-theme-icon:after {
+  content: ''; /* This is required for the pseudo-element to generate content */
+  display: inline-block;
+  width: 9px; /* Adjust the width to control the size of the circle */
+  height: 9px; /* Adjust the height to control the size of the circle */
+  background-color: var(--decoration-color); /* Change the background color to your preference */
+  border-radius: 50%; /* Make it a circle */
+  margin-left: 10px; /* Adjust the spacing between text and circle */
+  position: absolute;
+  top: 50%; /* Vertically center the circle */
+  transform: translateY(-50%); /* Vertically center the circle */
+  box-shadow: 0px 0px 3px 2px var(--decoration-color);
+}
+
+.header__theme-menu {
+  grid-row: 2;
+  justify-self: end;
+}
+
+.header__text {
+  grid-row: 3;
+  color: var(--header-text-color);
+  text-shadow: var(--header-text-shadow);
+  font-family: var(--general-font-family);
+  font-size: var(--header-font-size);
+  font-style: var(--main-font-style);
+  font-weight: var(--header-font-weight);
+  line-height: 82.5%; /* 95.7px */
+}
+
+.header__description-container {
+  display: flex;
+  grid-row: 4;
+  background: #FF0070;  
+  height: fit-content;
+  margin-bottom: 50px;
+}
+
+.header__description-text {
+  padding-right: 50px;
+  text-align: left;
+  color: #000028;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px; /* 130% */
+}
+
+.header__theme-menu-button {
+  display: flex;
+  border: transparent;
+  color: var(--button-color);
+  font-style: var(--main-font-style);
+  font-size: var(--main-font-size);
+  font-family: var(--general-font-family);
+  font-weight: var(--main-font-weight);
+  line-height: 20px;
+  width: 70px;
+  height: 26px;
+  padding: 0px 13px;
+  background-color: transparent;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-color);
 }
