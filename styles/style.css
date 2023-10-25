@@ -3,12 +3,6 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   background-color: var(--main-background-color);
-  background-image: url(../images/cover-image-dark.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
 }
 
 .header {
@@ -16,6 +10,12 @@
   display: grid;
   grid-template-rows: 66px 164px 245px 1fr;
   position: relative;
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .decorated-zone {
