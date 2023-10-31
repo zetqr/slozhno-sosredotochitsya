@@ -2,19 +2,18 @@
   /* colors and decorations */
   --accent-color: #ff0070;
   --background-color: #000028;
-  --main-text-color: #f1b2ce;
+  --text-color: #f1b2ce;
   --nav-color: #ff0070;
   --main-heading-color:#000028;
   --section-heading-color: #ff0070;
   --header-title-color: #db00ff;
   --footer-title-color: #db00ff;
-  --nav-hover-color: rgba(255, 0, 112, 0.40);
+  --nav-hover-color: rgba(255, 0, 112, .4);
   --header-text-shadow: 4px 4px 0px #FF0070;
   /* sizes */
   --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --nav-gap: 10px;
-  --decoration-gap: 10px;
   --small-gap: 10px;
   --medium-gap: 20px;
   --small-content-gap: 50px;
