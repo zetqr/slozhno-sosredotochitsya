@@ -1,12 +1,50 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  /* colors and decorations */
+  --accent-color: #ff0070;
+  --main-background-color: #000028;
+  --main-text-color:  #F1B2CE;
+  --main-heading-color:#000028;
+  --nav-color: #ff0070;
+  --section-title-color: #ff0070;
+  --header-title-color: #db00ff;
+  --footer-title-color: #db00ff;
+  background-image: url(../images/cover-image-dark.png);
+}
+
+.theme_dark .header__theme-menu-button_active {
+  outline: 1px solid var(--nav-color);
+}
+
+.theme_dark .header__theme-menu:hover {
+  --nav-hover-color: rgba(255, 0, 112, .4);
+}
+
+.theme_dark.title-decor {
+  --accent-color: #ff0070;
+  --main-text-color:#000028;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color:#ff0070;
+    --main-background-color:#000028;
+    --main-text-color: #f1b2ce;
+    --main-heading-color:#000028;
+    --nav-color: #ff0070;
+    --section-title-color: #ff0070;
+    --header-title-color: #db00ff;
+    --footer-title-color: #db00ff;
+  }
+
+  .page {
+    background-image: url(../images/cover-image-dark.png);
+  }
+  
+  .header__theme-menu-button_active {
+    outline: 1px solid var(--nav-color);  
+  }
+  
+  .header__theme-menu-button:hover {
+    --nav-hover-color: rgba(255, 0, 112, .4);
+  }
 }

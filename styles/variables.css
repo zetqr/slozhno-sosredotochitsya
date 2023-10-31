@@ -1,51 +1,33 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
-
 :root {
-  /* colors */
-  --header-text-color: #DB00FF;
-  --menu-text-color: #FF0070;
-  --main-background-color: #000028;
-  --main-text-color:  #000028;
-  --section-header-color: #DB00FF;
-  --paragraph-color: #F1B2CE;
-  --link-color: #F1B2CE;
-  --link-shadow-color: #DB00FF;
-  --decoration-color: #FF0070;
-  --button-color: #FF0070;
-
-  /* general sizes */
-  --page-width: 375px;
-  --rectangle-width: 355px;
-  --rectangle-height: 23px;
-  --button-width: 70px;
-  --button-height: 26px;
-  --header-margin-bottom: 65px;
-  --section-margin-bottom: 50px;
-  /* font family */
-  --general-font-family: 'IBM Plex Mono', arial, courier;
-  /* font sizes */
-  --dark-theme-decoration-text-line-height: 25px;
-  --text-line-height: 23.4px;
-  --button-font-size: 18px
-  --header-text-line-height: 82.5%;
-  --page-general-margin: 10px;
-  --section-margin: 50px;
-  --menu-font-size: 18px;
-  --header-font-size: 116px;
-  --main-font-size: 18px;
-  --section-font-size: 18px;
-  --footer-font-size:116px;
-  /* font-style and weight */
-  --header-font-weight: 700;
-  --header-font-style: normal;
-  --main-font-weight: 400;
-  --main-font-style: normal;
-  /* text decorations */
+  /* colors and decorations */
+  --accent-color: #ff0070;
+  --background-color: #000028;
+  --main-text-color: #f1b2ce;
+  --nav-color: #ff0070;
+  --main-heading-color:#000028;
+  --section-heading-color: #ff0070;
+  --header-title-color: #db00ff;
+  --footer-title-color: #db00ff;
+  --nav-hover-color: rgba(255, 0, 112, 0.40);
   --header-text-shadow: 4px 4px 0px #FF0070;
+  /* sizes */
+  --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --footer-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --nav-gap: 10px;
+  --decoration-gap: 10px;
+  --small-gap: 10px;
+  --medium-gap: 20px;
+  --small-content-gap: 50px;
+  --medium-content-gap: 80px;
+  --font-size: 18px;
+  --text-line-height: 130%;
+  /* fonts */
+  --general-font-family: 'IBM Plex Mono', arial, courier;
+}
 
-
-
+@media (width >= 768px) {
+  :root {
+    --header-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --footer-title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
 }
