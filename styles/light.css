@@ -30,7 +30,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
-    --main-background-color: #fff1f7;
+    --background-color: #fff1f7;
     --text-color:  #353430;
     --main-heading-color:#353430;
     --nav-color: #353430;
