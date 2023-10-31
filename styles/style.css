@@ -134,7 +134,7 @@
 }
 
 .content-gap {
-  margin-block-end: 50px;
+  margin-block-end: var(--medium-content-gap);
 }
 
 .section__title {
@@ -364,10 +364,6 @@
 
   .header__theme-menu-list {
     flex-direction: row;
-  }
-
-  .content-gap {
-    margin-block-end: var(--medium-content-gap);
   }
 
   .what__section .section__text-content{
