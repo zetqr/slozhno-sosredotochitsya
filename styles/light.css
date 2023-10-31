@@ -39,6 +39,9 @@
     --section-title-color: #353430;
     --header-title-color: #ffc2e6;
     --footer-title-color: #ffc2e6;
+  }
+
+  .page {
     background-image: url(../images/cover-image-light.png);
   }
   
