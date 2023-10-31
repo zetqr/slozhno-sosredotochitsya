@@ -80,7 +80,7 @@
   cursor: pointer;
   border: 1px solid transparent;
   padding: 2px 13px 4px;
-  color: var(--accent-color);
+  color: var(--nav-color);
   line-height: 100%;
   text-transform: lowercase;
 }
