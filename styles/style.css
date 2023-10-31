@@ -27,15 +27,15 @@
 }
 
 .decorated-zone::before {
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--decoration-color);
+  border-block-start: 1px solid var(--decoration-color);
   inset-inline-end: var(--small-gap);
   inset-block-start: var(--small-gap);
 }
 
 .decorated-zone::after {
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--decoration-color);
+  border-block-end: 1px solid var(--decoration-color);
   inset-inline-start: var(--small-gap);
   inset-block-end: var(--small-gap);
 }
@@ -57,7 +57,7 @@
   block-size: 9px;
   margin: -5px -19px;
   border-radius: 100%;
-  background-color: var(--accent-color);
+  background-color: var(--decoration-color);
   box-shadow: 0 0 4px 3px var(--nav-color);
   inset-inline-end: 0;
   inset-block-start: 50%;
@@ -243,15 +243,15 @@
   }
 
   .decorated-zone::before {
-    border-inline-end: 1px solid var(--accent-color);
-    border-block-start: 1px solid var(--accent-color);
+    border-inline-end: 1px solid var(--decoration-color);
+    border-block-start: 1px solid var(--decoration-color);
     inset-inline-end: var(--medium-gap);
     inset-block-start: var(--medium-gap);
   }
 
   .decorated-zone::after {
-    border-inline-start: 1px solid var(--accent-color);
-    border-block-end: 1px solid var(--accent-color);
+    border-inline-start: 1px solid var(--decoration-color);
+    border-block-end: 1px solid var(--decoration-color);
     inset-inline-start: var(--medium-gap);
     inset-block-end: var(--medium-gap);
   }
@@ -272,7 +272,7 @@
     inline-size: 9px;
     block-size: 9px;
     border-radius: 100%;
-    background-color: var(--accent-color);
+    background-color: var(--decoration-color);
     box-shadow: 0 0 4px 2px var(--nav-color);
     inset-block-start: 50%;
   }

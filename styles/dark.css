@@ -1,6 +1,7 @@
 .page.theme_dark {
   /* colors and decorations */
   --accent-color: #ff0070;
+  --decoration-color: #ff0070;
   --background-color: #000028;
   --text-color:  #F1B2CE;
   --main-heading-color:#000028;
@@ -27,6 +28,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --accent-color:#ff0070;
+    --decoration-color: #ff0070;
     --background-color:#000028;
     --text-color: #f1b2ce;
     --main-heading-color:#000028;
