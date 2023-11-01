@@ -66,7 +66,7 @@
     --nav-hover-color: rgba(255, 0, 112);
   }
 
-  @media (width <= 1024px) {
+  @media (width < 1024px) {
     .header__title {
       --header-text-shadow: 4px 4px 0px #ff8dcb;
     }
