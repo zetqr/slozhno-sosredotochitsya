@@ -9,7 +9,8 @@
   --header-title-color: #db00ff;
   --footer-title-color: #db00ff;
   --nav-hover-color: rgba(255, 0, 112, .4);
-  --header-text-shadow: 4px 4px 0px #FF0070;
+  --header-text-shadow: 4px 4px 0px #ff0070;
+  --footer-text-shadow: 2px 2px 0px #ff0070;
   /* sizes */
   --header-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --footer-title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

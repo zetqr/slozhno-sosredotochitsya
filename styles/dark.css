@@ -12,6 +12,10 @@
   background-image: url(../images/cover-image-dark.png);
 }
 
+.theme_dark .header__decoration {
+  display: block;
+}
+
 .theme_dark .header__theme-menu-button_active {
   outline: 1px solid var(--nav-color);
 }
@@ -49,4 +53,13 @@
   .header__theme-menu-button:hover {
     --nav-hover-color: rgba(255, 0, 112, .4);
   }
+
+    .header__title {
+      --header-text-shadow: 4px 4px 0px #ff0070;
+    }
+  
+    .footer__title {
+      --footer-text-shadow: 2px 2px 0px #ff0070;
+    }
+
 }
