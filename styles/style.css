@@ -315,7 +315,7 @@
     grid-column: 2;
   }
 
-  .why__section .section__text-content-item-title,
+  .why__section li:first-child .section__text-content-item-title,
   .how__section .section__text-content-item-title {
     margin-block-start: 0;
   }
